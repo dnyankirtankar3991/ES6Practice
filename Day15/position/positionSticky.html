@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parentdiv{
+            border: 2px yellowgreen solid;
+            height: 1550px;
+        }
+        .div1,.div2,.div3{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+        .div1{
+            background-color: yellow;
+            position: fixed;
+            }
+        .div2{
+            background-color: blue;
+            
+            position: sticky;
+            top: 50px;left: 50px;
+            }
+        .div3{
+            background-color: aqua;
+            position: relative;
+        }
+        .grand{
+            border: 2px solid red;
+            height: 3000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grand">
+    <div class="parentdiv">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</div>
+</div>
+</body>
+</html>
