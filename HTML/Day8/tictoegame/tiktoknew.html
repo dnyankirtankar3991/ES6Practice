@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tic Tac</title>
+    <link rel="stylesheet" href="./game.css" />
+    <script>
+      var tic = "X";
+      var player = "Player1";
+      function handleTic(id) {
+        if (document.getElementById(id).innerHTML === "?") {
+          document.getElementById(id).innerHTML = tic;
+          tic === "X" ? (tic = "O") : (tic = "X");
+          tic === "X" ? (player = "Player1") : (player = "Player2");
+          document.getElementById("ply").innerHTML = player;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="gm">
+      <marquee behavior="scroll" direction="down" scrollamount="1">
+        <h2>Tic Toe game</h2>
+      </marquee>
+      <table>
+        <tr>
+          <td colspan="3" id="ply">Player1</td>
+        </tr>
+        <tr>
+          <td id="t1" onclick="handleTic('t1')">?</td>
+          <td id="t2" onclick="handleTic('t2')">?</td>
+          <td id="t3" onclick="handleTic('t3')">?</td>
+        </tr>
+        <tr>
+          <td id="t4" onclick="handleTic('t4')">?</td>
+          <td id="t5" onclick="handleTic('t5')">?</td>
+          <td id="t6" onclick="handleTic('t6')">?</td>
+        </tr>
+        <tr>
+          <td id="t7" onclick="handleTic('t7')">?</td>
+          <td id="t8" onclick="handleTic('t8')">?</td>
+          <td id="t9" onclick="handleTic('t9')">?</td>
+        </tr>
+      </table>
+      <a href="tiktoknew.html">
+        <input type="reset" value="Restart Game" id="rset"
+      /></a>
+    </div>
+  </body>
+</html>

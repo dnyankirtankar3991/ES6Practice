@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      .signup {
+        padding: 5px;
+        text-align: center;
+        margin: 10;
+        margin-top: 50px;
+        border: 2px solid yellowgreen;
+        border-radius: 30px 0px 30px 0px;
+        background-image: url("img4.jpg");
+        height: 550px;
+        width: 30%;
+        margin: auto;
+        box-shadow: 0px 25px 25px 0px black;
+      }
+      h2 {
+        background-color: brown;
+        border-radius: 10px;
+        color: whitesmoke;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      input {
+        border-radius: 20px;
+        padding: 10px;
+      }
+      .gender :hover {
+        color: blue;
+      }
+      #id,
+      #submit,
+      #rset {
+        background-color: brown;
+        color: whitesmoke;
+      }
+      #bt{
+        background-color: brown;
+        color: whitesmoke;
+        border-radius: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup">
+      <h2>Sign Up Form</h2>
+      <form>
+        <input
+          type="text"
+          name=" Name"
+          placeholder="Enter Your Name"
+          id="name"
+        /><br /><br />
+        <input
+          type="text"
+          name="UserId"
+          placeholder="Enter User Id"
+          id="uId"
+        /><br /><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Create Password"
+          id="cPsw"
+        /><br /><br />
+
+        <div>
+          <label>DOB</label><br />
+          <input type="date" name="DOB" id="dob" /><br /><br />
+          <input
+            type="number"
+            name="contact number"
+            maxlength="10"
+            placeholder="Mobile Number"
+            id="mbnumber"
+          /><br /><br />
+          <input
+            type="text"
+            name="Address"
+            placeholder="Enter Your Address"
+            id="Address"
+          /><br /><br />
+          <div class="gender">
+            <label>Select Gender : </label>
+            <label>Male</label>
+            <input type="radio" name="male" id="gender" />
+            <label>Female</label>
+            <input type="radio" name="male" id="gender" />
+            <label>Other</label>
+            <input type="radio" name="male" id="gender" /><br />
+          </div>
+
+          <label>I Accept T&C</label>
+          <div class="btn">
+            <input type="checkbox" name="I Accept" id="cBox" /><br />
+            <input type="submit" value="Submit" id="submit" />
+            <input type="reset" name="reset" id="rset" />
+            <a href="./loginexample.html"> <button id="bt" >Login</button> </a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="dtb">
+      <form></form>
+    </div>
+  </body>
+</html>

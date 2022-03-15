@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mainDiv,
+      .mainDiv1,
+      .mainDiv2 {
+        border: 2px solid red;
+        height: 500px;
+        width: 350px;
+        text-align: center;
+        background-image: url("");
+      }
+      .childDiv {
+        border: 2px solid;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        
+
+        /* background-image: url("./react.png");
+        background-position: center; */
+      }
+      .childDiv1 {
+        border: 2px solid;
+        height: 100px;
+        width: 100px;
+        border-radius: 30px;
+      }
+      .childDiv2 {
+        border: 2px solid;
+        height: 100px;
+        width: 100px;
+        border-radius: px;
+      }
+      .mainDiv1 {
+        position: relative;
+        top: -500px;
+        left: 400px;
+      }
+      .mainDiv2 {
+        position: relative;
+        bottom: 1000px;
+        left: 800px;
+      }
+      #box2 {
+        position: relative;
+        left: 70px;
+        top: 100px;
+        background-image: url("./react.png");
+        background-size: cover;
+        background-position: center;
+      }
+      #box3 {
+        position: relative;
+        left: 170px;
+      }
+      #box3:hover {
+        background-image: url("js.png");
+        background-size: cover;
+        background-position: center;
+      }
+      #box4 {
+        position: relative;
+        left: 70px;
+      }
+      #box5 {
+        position: relative;
+        left: 170px;
+        bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainDiv" id="box1">
+      <div class="childDiv" id="box2">A</div>
+      <div class="childDiv" id="box3">B</div>
+      <div class="childDiv" id="box4">C</div>
+      <div class="childDiv" id="box5">D</div>
+    </div>
+    <div class="mainDiv1" id="box1">
+      <div class="childDiv1" id="box2">A</div>
+      <div class="childDiv1" id="box3">B</div>
+      <div class="childDiv1" id="box4">C</div>
+      <div class="childDiv1" id="box5">D</div>
+    </div>
+    <div class="mainDiv2" id="box1">
+      <div class="childDiv2" id="box2">A</div>
+      <div class="childDiv2" id="box3">B</div>
+    </div>
+  </body>
+</html>

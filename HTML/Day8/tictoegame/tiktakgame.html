@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTak Game</title>
+    <link rel="stylesheet" href="./game.css" />
+    <script>
+      var tik = "X";
+      var tik = "O";
+      function handleClick(id) {
+        document.getElementById(id).innerHTML = tik;
+
+        if (tik === "X") tik = "O";
+        else tik = "X";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="gm">
+      <h2 style="text-align: center;">Tik Tok Game</h2>
+      <table>
+
+        <tr>
+          <td id="t1" onclick="handleClick('t1')">?</td>
+          <td id="t2" onclick="handleClick('t2')">?</td>
+          <td id="t3" onclick="handleClick('t3')">?</td>
+        </tr>
+        <tr>
+          <td id="t4" onclick="handleClick('t4')">?</td>
+          <td id="t5" onclick="handleClick('t5')">?</td>
+          <td id="t6" onclick="handleClick('t6')">?</td>
+        </tr>
+        <tr>
+          <td id="t7" onclick="handleClick('t7')">?</td>
+          <td id="t8" onclick="handleClick('t8')">?</td>
+          <td id="t9" onclick="handleClick('t9')">?</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

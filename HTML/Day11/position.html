@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      .main {
+        border: 2px solid red;
+        height: 500px;
+        width: 400px;
+        position: absolute;
+      }.main:hover #hide{
+        display: block;
+      }
+      .main:hover #box2{
+        left: 100px;top: 55px;
+        transition: 0.7s;border-radius: 40px;
+        background-color: green;
+
+      }
+      .main:hover #box3{
+        left: 100px;bottom: 150px;
+        background-color: chartreuse;
+        transition: 0.7s;border-radius: 40px;
+
+      }
+      .main:hover #box4{
+        right: 100px;bottom: 150px;
+        background-color: chocolate;
+        transition: 0.7s;border-radius: 40px;
+
+      }
+      .main:hover #box5{
+        right: 100px;top: 150px;
+        background-color: red;
+        transition: 0.7s;border-radius: 40px;
+
+      }
+      .child {
+        height: 100px;
+        width: 100px;
+        border: 2px solid blue;
+        padding: 2px;
+      }
+      #box2 {
+        position: relative;
+        bottom: 0px;
+        right: 0px;
+
+        background-color: brown;
+        color: blanchedalmond;
+        text-align: center;font-size: 100px;
+      }
+      #box3 {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        background-color: yellow;
+        text-align: center;font-size: 100px;
+        color: black;
+      }
+      #box4 {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background-color: green;
+        text-align: center;font-size: 100px;
+        color: black;
+      }
+      #box5 {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: violet;
+        color: black;
+        text-align: center;font-size: 100px;
+      }
+      .secnd{
+        background-color: aqua;border: 2px solid red;
+        height: 800px;
+        width: 100%;
+
+      }
+      #hide{
+        display: none;
+        background-color: yellow;color: red;
+        text-align: center;padding: 10px;
+        transition: 1s;border-radius: 0px 0px 80px 80px;
+      }
+      
+  
+    </style>
+  </head>
+  <body>
+    
+
+    <div class="main" id="box1">
+      <div id="hide" ><h1>Hello DK</h1></div>
+            <div class="child" id="box2">A</div>
+      <div class="child" id="box3">B</div>
+      <div class="child" id="box4">C</div>
+      <div class="child" id="box5">D</div>
+      </div></div>
+      
+    </div>
+    <div class="secnd">
+      <div></div>
+    </div>
+  </body>
+</html>
